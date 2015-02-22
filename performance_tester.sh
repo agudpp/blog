@@ -37,10 +37,10 @@ runTest "No Optimization - Size = 200"
 compile "-DTEST_COUNT=99999 -DNUM_COUNT=500"
 runTest "No Optimization - Size = 500"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=1000"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=1000"
 runTest "No Optimization - Size = 1000"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=5000"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=5000"
 runTest "No Optimization - Size = 5000"
 
 
@@ -55,10 +55,10 @@ runTest "Optimization O2 - Size = 100"
 compile "-DTEST_COUNT=99999 -DNUM_COUNT=500 -O2"
 runTest "Optimization O2 - Size = 500"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=1000 -O2"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=1000 -O2"
 runTest "Optimization O2 - Size = 1000"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=5000 -O2"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=5000 -O2"
 runTest "Optimization O2 - Size = 5000"
 
 
@@ -73,10 +73,10 @@ runTest "Optimization O3 - Size = 100"
 compile "-DTEST_COUNT=99999 -DNUM_COUNT=500 -O3"
 runTest "Optimization O3 - Size = 500"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=1000 -O3"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=1000 -O3"
 runTest "Optimization O3 - Size = 1000"
 
-compile "-DTEST_COUNT=9999 -DNUM_COUNT=5000 -O3"
+compile "-DTEST_COUNT=99999 -DNUM_COUNT=5000 -O3"
 runTest "Optimization O3 - Size = 5000"
 
 

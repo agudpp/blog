@@ -7,6 +7,7 @@
 
 #include "Debug.h"
 #include "stack_vector.h"
+#include "stack_vector2.h"
 
 
 
@@ -15,18 +16,13 @@ namespace SampleModule {
 int
 sampleCallHeap(void)
 {
-    // what we will do is just sort the vector and iterate that after
-    // sorting them we have the correct behavior
-
     int result = 0;
     std::vector<int> elements;
     elements.reserve(NUM_COUNT);
+
     for (int i = NUM_COUNT-1; i >= 0; --i) {
         elements.push_back(i);
     }
-//    std::cout << "addressHeap: " << (size_t) &(elements[0]) << std::endl;
-
-    //std::sort(elements.begin(), elements.end());
 
     for (int i = 0; i < NUM_COUNT; ++i) {
         result += elements[i];
@@ -34,20 +30,14 @@ sampleCallHeap(void)
     return result;
 }
 
-
 int
 sampleCallStack(void)
 {
-    // what we will do is just sort the vector and iterate that after
-    // sorting them we have the correct behavior
     int result = 0;
     stack_vector<int, NUM_COUNT> elements;
     for (int i = NUM_COUNT-1; i >= 0; --i) {
         elements.push_back(i);
     }
-
-//    std::cout << "stackAddr: " << (size_t) &(elements[0]) << std::endl;
-    //std::sort(elements.begin(), elements.end());
 
     for (int i = 0; i < NUM_COUNT; ++i) {
         result += elements[i];
@@ -58,17 +48,12 @@ sampleCallStack(void)
 int
 sampleCallStack2(int size)
 {
-    // what we will do is just sort the vector and iterate that after
-    // sorting them we have the correct behavior
     int result = 0;
-    int elements[size];
-    int count = 0;
+    int mem[size];
+    stack_vector2<int> elements(mem);
     for (int i = size-1; i >= 0; --i) {
-        elements[count++] = i;
+        elements.push_back(i);
     }
-
-    //std::cout << "stackAddr: " << (size_t) &(elements[0]) << std::endl;
-    //std::sort(&elements[0], &elements[count]);
 
     for (int i = 0; i < size; ++i) {
         result += elements[i];

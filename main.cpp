@@ -69,7 +69,7 @@ memAllocTest(void)
 {
     double t1 = 0., t2 = 0.f;
     double accumTime = 0.f;
-    int dummy1 = 0, dummy2 = 0;
+    int dummy1 = 0, dummy2 = 0, dummy3 = 0;
 
     // measure the heap
     for (int i = 0; i < TEST_COUNT; ++i) {
@@ -102,14 +102,33 @@ memAllocTest(void)
     }
     const double timeStack = accumTime;
 
+    // measure the stack2
+    accumTime = 0.f;
+    for (int i = 0; i < TEST_COUNT; ++i) {
+        randomMemAllocation();
+        t1 = TimeHelper::currentTime();
+        dummy3 += SampleModule::sampleCallStack2(NUM_COUNT);
+        t2 = TimeHelper::currentTime();
+        accumTime += t2-t1;
+
+        if (gmem.size() > 5000) {
+            for (int* array : gmem) delete[] array;
+            gmem.clear();
+        }
+    }
+    const double timeStack2 = accumTime;
+
     assert(dummy1 == dummy2);
+    assert(dummy2 == dummy3);
 
     std::cout << "Test: memAllocTest" << std::endl
               << "Number of runs: " << TEST_COUNT
               << "\t\tSize: " << NUM_COUNT << std::endl << std::endl;
     std::cout << "Time takes heap: " << timeHeap  << std::endl
               << "Time takes stack: " << timeStack << std::endl
-              << "dummy1: " << dummy1 << ", dummy2: " << dummy2 << std::endl;
+              << "Time takes stack2: " << timeStack2 << std::endl
+              << "dummy1: " << dummy1 << ", dummy2: " << dummy2
+              << ", dummy3: " << dummy3 << std::endl;
 }
 
 int main()

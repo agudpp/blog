@@ -1,0 +1,208 @@
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=50
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 50
+Test: memAllocTest
+Number of runs: 99999		Size: 50
+
+Time takes heap: 0.318799
+Time takes stack: 0.178864
+dummy1: 122498775, dummy2: 122498775
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=100
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 100
+Test: memAllocTest
+Number of runs: 99999		Size: 100
+
+Time takes heap: 0.493413
+Time takes stack: 0.253591
+dummy1: 494995050, dummy2: 494995050
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=200
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 200
+Test: memAllocTest
+Number of runs: 99999		Size: 200
+
+Time takes heap: 0.839622
+Time takes stack: 0.364492
+dummy1: 1989980100, dummy2: 1989980100
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=500
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 500
+Test: memAllocTest
+Number of runs: 99999		Size: 500
+
+Time takes heap: 1.83824
+Time takes stack: 0.753382
+dummy1: -410026638, dummy2: -410026638
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=1000
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 1000
+Test: memAllocTest
+Number of runs: 9999		Size: 1000
+
+Time takes heap: 0.361016
+Time takes stack: 0.111958
+dummy1: 699533204, dummy2: 699533204
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=5000
+compiled
+----------------------------------------------------------------------
+Running test No Optimization - Size = 5000
+Test: memAllocTest
+Number of runs: 9999		Size: 5000
+
+Time takes heap: 1.78458
+Time takes stack: 0.671406
+dummy1: 408450916, dummy2: 408450916
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=50 -O2
+compiled
+----------------------------------------------------------------------
+Running test Optimization O2 - Size = 50
+Test: memAllocTest
+Number of runs: 99999		Size: 50
+
+Time takes heap: 0.143358
+Time takes stack: 0.122377
+dummy1: 122498775, dummy2: 122498775
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=100 -O2
+compiled
+----------------------------------------------------------------------
+Running test Optimization O2 - Size = 100
+Test: memAllocTest
+Number of runs: 99999		Size: 100
+
+Time takes heap: 0.164025
+Time takes stack: 0.129484
+dummy1: 494995050, dummy2: 494995050
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=500 -O2
+compiled
+----------------------------------------------------------------------
+Running test Optimization O2 - Size = 500
+Test: memAllocTest
+Number of runs: 99999		Size: 500
+
+Time takes heap: 0.349326
+Time takes stack: 0.190547
+dummy1: -410026638, dummy2: -410026638
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=1000 -O2
+compiled
+----------------------------------------------------------------------
+Running test Optimization O2 - Size = 1000
+Test: memAllocTest
+Number of runs: 9999		Size: 1000
+
+Time takes heap: 0.0650029
+Time takes stack: 0.0265098
+dummy1: 699533204, dummy2: 699533204
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=5000 -O2
+compiled
+----------------------------------------------------------------------
+Running test Optimization O2 - Size = 5000
+Test: memAllocTest
+Number of runs: 9999		Size: 5000
+
+Time takes heap: 0.270376
+Time takes stack: 0.0801295
+dummy1: 408450916, dummy2: 408450916
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=50 -O3
+compiled
+----------------------------------------------------------------------
+Running test Optimization O3 - Size = 50
+Test: memAllocTest
+Number of runs: 99999		Size: 50
+
+Time takes heap: 0.143408
+Time takes stack: 0.122191
+dummy1: 122498775, dummy2: 122498775
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=100 -O3
+compiled
+----------------------------------------------------------------------
+Running test Optimization O3 - Size = 100
+Test: memAllocTest
+Number of runs: 99999		Size: 100
+
+Time takes heap: 0.16131
+Time takes stack: 0.127176
+dummy1: 494995050, dummy2: 494995050
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=99999 -DNUM_COUNT=500 -O3
+compiled
+----------------------------------------------------------------------
+Running test Optimization O3 - Size = 500
+Test: memAllocTest
+Number of runs: 99999		Size: 500
+
+Time takes heap: 0.33876
+Time takes stack: 0.184803
+dummy1: -410026638, dummy2: -410026638
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=1000 -O3
+compiled
+----------------------------------------------------------------------
+Running test Optimization O3 - Size = 1000
+Test: memAllocTest
+Number of runs: 9999		Size: 1000
+
+Time takes heap: 0.0653204
+Time takes stack: 0.0261008
+dummy1: 699533204, dummy2: 699533204
+done!
+----------------------------------------------------------------------
+
+compiling test with args -DTEST_COUNT=9999 -DNUM_COUNT=5000 -O3
+compiled
+----------------------------------------------------------------------
+Running test Optimization O3 - Size = 5000
+Test: memAllocTest
+Number of runs: 9999		Size: 5000
+
+Time takes heap: 0.268139
+Time takes stack: 0.0808111
+dummy1: 408450916, dummy2: 408450916
+done!
+----------------------------------------------------------------------
+

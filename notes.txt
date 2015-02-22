@@ -1,0 +1,8 @@
+- The times are almost the same between std and stackvector, smaller sizes =>
+  (<200) is faster stackvector, otherwise the std is better (maybe code instruction
+  lost)
+- We need to start allocating random stuff 
+  
+- binary sizes doesn't seems to change with different sizes.
+
+

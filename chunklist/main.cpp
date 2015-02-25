@@ -11,15 +11,23 @@
 
 #define DATA_SIZE_ALLOCATOR (ELEMENTS_PER_LIST*LIST_COUNT)
 
+
+typedef Chunk<int,CHUNK_SIZE> ChunkType;
+typedef StaticAllocator<Node<int>, DATA_SIZE_ALLOCATOR> StaticNodeAllocator;
+typedef HeapAllocator<Node<int>> HeapNodeIntAllocator;
+typedef HeapAllocator<Node<ChunkType>> HeapNodeChunkAllocator;
+
 ////////////////////////////////////////////////////////////////////////////////
 /// normal allocator ("malloc")
 ///
 static void
 normalAllocator(void)
 {
-    typedef nasty_list<int, HeapAllocator<Node<int>>> ListT;
-    //typedef nasty_list<int, StaticAllocator<Node<int>, DATA_SIZE_ALLOCATOR>> ListT;
-    typedef ChunkList<int, HeapAllocator<Node<Chunk<int,CHUNK_SIZE>>>, CHUNK_SIZE> ChunkListT;
+    StaticNodeAllocator::init();
+
+    //typedef nasty_list<int,HeapNodeIntAllocator> ListT;
+    typedef nasty_list<int, StaticNodeAllocator> ListT;
+    typedef ChunkList<int, HeapNodeChunkAllocator, CHUNK_SIZE> ChunkListT;
 
     ListT normalLists[LIST_COUNT];
     ChunkListT chunkLists[LIST_COUNT];

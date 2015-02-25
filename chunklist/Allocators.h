@@ -4,6 +4,7 @@
 #include <stack>
 
 
+
 // define a "nasty" allocator
 template<typename T>
 struct HeapAllocator {
@@ -35,10 +36,10 @@ struct StaticAllocator {
 };
 
 
-//template<typename T, unsigned int SIZE>
-//inline static typename T StaticAllocator<T,SIZE>::mem[SIZE];
-//template<typename T, unsigned int SIZE>
-//inline std::stack<T*> StaticAllocator<T,SIZE>::data;
+template<typename T, unsigned int SIZE>
+T StaticAllocator<T,SIZE>::mem[SIZE];
+template<typename T, unsigned int SIZE>
+std::stack<T*> StaticAllocator<T,SIZE>::data;
 
 
 #endif // ALLOCATORS_H

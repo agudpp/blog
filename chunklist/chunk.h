@@ -61,8 +61,8 @@ public:
 
 
 private:
-    T m_data[SIZE];
-    std::uint8_t m_size;
+    alignas (T) T m_data[SIZE];
+    unsigned int m_size;
 };
 
 

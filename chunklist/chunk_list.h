@@ -97,24 +97,24 @@ public:
     void applyToAll(OP& op)
     {
 
-//        auto beg = m_list.begin();
-//        auto end = m_list.end();
-//        while (beg != end) {
-//            ChunkNode& cn = *beg;
-//            for (int i = 0; i < cn.size(); ++i) {
-//                op(cn[i]);
-//            }
-//            ++beg;
-//        }
-
-        Node<ChunkNode>* first = m_list.getFirstNode();
-        while (first != 0) {
-            const ChunkNode& d = first->data;
-            for (unsigned int i = 0; i < d.size(); ++i) {
-                op(d[i]);
+        auto beg = m_list.begin();
+        auto end = m_list.end();
+        while (beg != end) {
+            ChunkNode& cn = *beg;
+            for (int i = 0; i < cn.size(); ++i) {
+                op(cn[i]);
             }
-            first = first->next;
+            ++beg;
         }
+
+//        Node<ChunkNode>* first = m_list.getFirstNode();
+//        while (first != 0) {
+//            const ChunkNode& d = first->data;
+//            for (unsigned int i = 0; i < d.size(); ++i) {
+//                op(d[i]);
+//            }
+//            first = first->next;
+//        }
     }
 
 private:

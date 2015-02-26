@@ -9,10 +9,10 @@
 // TODO: implement here the ChunkList class using the List class to hold the
 //       chunks but we need to change the iterators (how they will work).
 //
-template<typename T, typename NodeAlloc, unsigned int CHUNK_SIZE = 8>
+template<typename T, typename NodeAlloc, unsigned int CSIZE = 8>
 class ChunkList {
     // helper typedefs
-    typedef Chunk<T, CHUNK_SIZE>    ChunkNode;
+    typedef Chunk<T, CSIZE>    ChunkNode;
     typedef nasty_list<ChunkNode, NodeAlloc> ListType;
 
 public:
@@ -96,21 +96,22 @@ public:
     template<typename OP>
     void applyToAll(OP& op)
     {
-
         auto beg = m_list.begin();
         auto end = m_list.end();
         while (beg != end) {
-            ChunkNode& cn = *beg;
+            const ChunkNode& cn = *beg;
+            // here the compiler can optimize :)
             for (int i = 0; i < cn.size(); ++i) {
                 op(cn[i]);
             }
             ++beg;
         }
 
-//        Node<ChunkNode>* first = m_list.getFirstNode();
+//        const Node<ChunkNode>* first = m_list.getFirstNode();
 //        while (first != 0) {
 //            const ChunkNode& d = first->data;
-//            for (unsigned int i = 0; i < d.size(); ++i) {
+//            const unsigned int size = d.size();
+//            for (unsigned int i = 0; i < size; ++i) {
 //                op(d[i]);
 //            }
 //            first = first->next;

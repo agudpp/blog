@@ -62,7 +62,7 @@ public:
 
 private:
     alignas (T) T m_data[SIZE];
-    unsigned int m_size;
+    short m_size; // could be a short
 };
 
 

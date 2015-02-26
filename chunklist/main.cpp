@@ -13,9 +13,14 @@
 
 
 typedef Chunk<int,CHUNK_SIZE> ChunkType;
-typedef StaticAllocator<Node<int>, DATA_SIZE_ALLOCATOR> StaticNodeAllocator;
-typedef HeapAllocator<Node<int>> HeapNodeIntAllocator;
-typedef HeapAllocator<Node<ChunkType>> HeapNodeChunkAllocator;
+#ifdef USE_HEAP_ALLOC
+typedef HeapAllocator<Node<int>>        NodeAllocator;
+typedef HeapAllocator<Node<ChunkType>>  NodeChunkAllocator;
+#else
+// use static one
+typedef StaticAllocator<Node<int>, DATA_SIZE_ALLOCATOR>         NodeAllocator;
+typedef StaticAllocator<Node<ChunkType>, DATA_SIZE_ALLOCATOR>   NodeChunkAllocator;
+#endif
 
 ////////////////////////////////////////////////////////////////////////////////
 /// normal allocator ("malloc")
@@ -23,11 +28,13 @@ typedef HeapAllocator<Node<ChunkType>> HeapNodeChunkAllocator;
 static void
 normalAllocator(void)
 {
-    StaticNodeAllocator::init();
+#ifndef USE_HEAP_ALLOC
+    NodeAllocator::init();
+    NodeChunkAllocator::init();
+#endif
 
-    //typedef nasty_list<int,HeapNodeIntAllocator> ListT;
-    typedef nasty_list<int, StaticNodeAllocator> ListT;
-    typedef ChunkList<int, HeapNodeChunkAllocator, CHUNK_SIZE> ChunkListT;
+    typedef nasty_list<int,NodeAllocator> ListT;
+    typedef ChunkList<int, NodeChunkAllocator, CHUNK_SIZE> ChunkListT;
 
     ListT normalLists[LIST_COUNT];
     ChunkListT chunkLists[LIST_COUNT];
@@ -42,7 +49,7 @@ normalAllocator(void)
     }
 
     // test the time to get the elements
-    int d1 = 0, d2 = 0, d3 = 0, d4 = 0;
+    int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0;
     double t1 = 0., t2 = 0.;
 
     t1 = TimeHelper::currentTime();
@@ -89,6 +96,16 @@ normalAllocator(void)
     d4 = opSum.sum;
     const double chunklListFunctorTime = t2 - t1;
 
+    // lambda
+//    t1 = TimeHelper::currentTime();
+//    for (unsigned int i = 0; i < ROUNDS; ++i) {
+//        for (unsigned int j = 0; j < LIST_COUNT; ++j) {
+//            chunkLists[j].applyToAll(opSum);
+//        }
+//    }
+//    t2 = TimeHelper::currentTime();
+//    const double chunklListFunctorTime = t2 - t1;
+
 
     t1 = TimeHelper::currentTime();
     for (unsigned int i = 0; i < ROUNDS; ++i) {
@@ -103,7 +120,7 @@ normalAllocator(void)
     t2 = TimeHelper::currentTime();
     const double stdListTime = t2 - t1;
 
-    std::cout << "d1: " << d1 << ", d2: " << d2 << ", d3: " << d3 << std::endl;
+    //std::cout << "d1: " << d1 << ", d2: " << d2 << ", d3: " << d3 << std::endl;
 
     assert(d1 == d2);
     assert(d1 == d3);
@@ -119,6 +136,14 @@ normalAllocator(void)
 
     std::cout << "perfGainChunkList: " << perfGainChunkList << std::endl
               << "perfGainChunklListFunctorTime: " << perfGainChunklListFunctorTime << std::endl;
+
+
+    std::cout << ELEMENTS_PER_LIST << ","
+              << CHUNK_SIZE << ","
+              << stdListTime << ","
+              << normalListTime << ","
+              << chunklListTime << ","
+              << chunklListFunctorTime << "\n";
 
 }
 

@@ -5,7 +5,7 @@ aux_source_directory(. SRC_LIST)
 
 # -ftree-vectorize -march=native -ffast-math -use_fast_math --ptxas-options=-v
 #add_definitions(-DDEBUG)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3 -ftree-vectorize -march=native -ffast-math -use_fast_math")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fwrapv -std=c++11 -O3 -ftree-vectorize -march=native -ffast-math -use_fast_math")
 
 
 set(SRC_LIST ${SRC_LIST}

@@ -4,17 +4,17 @@
 
 // the number of tests we will do
 #ifndef ROUNDS
-#define ROUNDS              999999
+#define ROUNDS              9999999
 #endif
 
 // the number of elements per list
 #ifndef ELEMENTS_PER_LIST
-#define ELEMENTS_PER_LIST   13
+#define ELEMENTS_PER_LIST   64
 #endif
 
 // the size of the chunk
 #ifndef CHUNK_SIZE
-#define CHUNK_SIZE   8
+#define CHUNK_SIZE   32
 #endif
 
 
@@ -24,6 +24,8 @@
 #ifndef LIST_COUNT
 #define LIST_COUNT          1
 #endif
+
+
 
 
 #endif // DEFINES_H

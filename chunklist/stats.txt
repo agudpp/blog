@@ -1,0 +1,1080 @@
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.749422
+chunklListTime: 1.2226
+chunklListFunctorTime: 1.38139
+stdListTime: 0.771259
+perfGainChunkList: 0.630833
+perfGainChunklListFunctorTime: 0.558319
+4,1,0.771259,0.749422,1.2226,1.38139
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.10299
+chunklListTime: 1.97542
+chunklListFunctorTime: 2.34489
+stdListTime: 1.07942
+perfGainChunkList: 0.546426
+perfGainChunklListFunctorTime: 0.46033
+8,1,1.07942,1.10299,1.97542,2.34489
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.85354
+chunklListTime: 3.49732
+chunklListFunctorTime: 4.39376
+stdListTime: 1.83
+perfGainChunkList: 0.523258
+perfGainChunklListFunctorTime: 0.416499
+16,1,1.83,1.85354,3.49732,4.39376
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.50726
+chunklListTime: 6.63831
+chunklListFunctorTime: 8.41585
+stdListTime: 3.36491
+perfGainChunkList: 0.506892
+perfGainChunklListFunctorTime: 0.39983
+32,1,3.36491,3.50726,6.63831,8.41585
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.75979
+chunklListTime: 12.8283
+chunklListFunctorTime: 16.559
+stdListTime: 6.60965
+perfGainChunkList: 0.515241
+perfGainChunklListFunctorTime: 0.399157
+64,1,6.60965,6.75979,12.8283,16.559
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.706955
+chunklListTime: 1.19533
+chunklListFunctorTime: 0.980481
+stdListTime: 0.658342
+perfGainChunkList: 0.550762
+perfGainChunklListFunctorTime: 0.671448
+4,4,0.658342,0.706955,1.19533,0.980481
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.08305
+chunklListTime: 1.97454
+chunklListFunctorTime: 1.62315
+stdListTime: 1.08695
+perfGainChunkList: 0.550486
+perfGainChunklListFunctorTime: 0.669658
+8,4,1.08695,1.08305,1.97454,1.62315
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.86757
+chunklListTime: 3.56469
+chunklListFunctorTime: 2.91645
+stdListTime: 1.83995
+perfGainChunkList: 0.516161
+perfGainChunklListFunctorTime: 0.630888
+16,4,1.83995,1.86757,3.56469,2.91645
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.40725
+chunklListTime: 6.75504
+chunklListFunctorTime: 5.49708
+stdListTime: 3.40812
+perfGainChunkList: 0.50453
+perfGainChunklListFunctorTime: 0.619987
+32,4,3.40812,3.40725,6.75504,5.49708
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.59182
+chunklListTime: 13.2766
+chunklListFunctorTime: 10.6056
+stdListTime: 6.30911
+perfGainChunkList: 0.475203
+perfGainChunklListFunctorTime: 0.594887
+64,4,6.30911,6.59182,13.2766,10.6056
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.726678
+chunklListTime: 1.20054
+chunklListFunctorTime: 1.00435
+stdListTime: 0.684699
+perfGainChunkList: 0.570324
+perfGainChunklListFunctorTime: 0.681736
+4,16,0.684699,0.726678,1.20054,1.00435
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.05026
+chunklListTime: 1.9127
+chunklListFunctorTime: 1.483
+stdListTime: 1.03694
+perfGainChunkList: 0.542132
+perfGainChunklListFunctorTime: 0.699215
+8,16,1.03694,1.05026,1.9127,1.483
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.86197
+chunklListTime: 3.4748
+chunklListFunctorTime: 2.49455
+stdListTime: 1.80498
+perfGainChunkList: 0.519449
+perfGainChunklListFunctorTime: 0.723569
+16,16,1.80498,1.86197,3.4748,2.49455
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.48575
+chunklListTime: 6.52188
+chunklListFunctorTime: 4.58143
+stdListTime: 3.42754
+perfGainChunkList: 0.525544
+perfGainChunklListFunctorTime: 0.748138
+32,16,3.42754,3.48575,6.52188,4.58143
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.77982
+chunklListTime: 12.8343
+chunklListFunctorTime: 8.85438
+stdListTime: 6.57984
+perfGainChunkList: 0.512675
+perfGainChunklListFunctorTime: 0.743117
+64,16,6.57984,6.77982,12.8343,8.85438
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.0420669
+chunklListTime: 0.0936949
+chunklListFunctorTime: 0.0466741
+stdListTime: 0.0674439
+perfGainChunkList: 0.719825
+perfGainChunklListFunctorTime: 1.445
+4,1,0.0674439,0.0420669,0.0936949,0.0466741
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.0903121
+chunklListTime: 0.171915
+chunklListFunctorTime: 0.115131
+stdListTime: 0.126715
+perfGainChunkList: 0.737081
+perfGainChunklListFunctorTime: 1.10062
+8,1,0.126715,0.0903121,0.171915,0.115131
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.263048
+chunklListTime: 0.331915
+chunklListFunctorTime: 0.298727
+stdListTime: 0.233089
+perfGainChunkList: 0.702255
+perfGainChunklListFunctorTime: 0.780274
+16,1,0.233089,0.263048,0.331915,0.298727
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.523162
+chunklListTime: 0.621388
+chunklListFunctorTime: 0.594695
+stdListTime: 0.466608
+perfGainChunkList: 0.750913
+perfGainChunklListFunctorTime: 0.784617
+32,1,0.466608,0.523162,0.621388,0.594695
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 1.01494
+chunklListTime: 1.2086
+chunklListFunctorTime: 1.16535
+stdListTime: 0.893645
+perfGainChunkList: 0.739407
+perfGainChunklListFunctorTime: 0.766849
+64,1,0.893645,1.01494,1.2086,1.16535
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.078157
+chunklListTime: 0.0419691
+chunklListFunctorTime: 0.03207
+stdListTime: 0.0678879
+perfGainChunkList: 1.61757
+perfGainChunklListFunctorTime: 2.11686
+4,4,0.0678879,0.078157,0.0419691,0.03207
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.149846
+chunklListTime: 0.0764551
+chunklListFunctorTime: 0.078442
+stdListTime: 0.131153
+perfGainChunkList: 1.71543
+perfGainChunklListFunctorTime: 1.67197
+8,4,0.131153,0.149846,0.0764551,0.078442
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.293558
+chunklListTime: 0.17886
+chunklListFunctorTime: 0.112611
+stdListTime: 0.234377
+perfGainChunkList: 1.31039
+perfGainChunklListFunctorTime: 2.0813
+16,4,0.234377,0.293558,0.17886,0.112611
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.510224
+chunklListTime: 0.321748
+chunklListFunctorTime: 0.227536
+stdListTime: 0.465859
+perfGainChunkList: 1.4479
+perfGainChunklListFunctorTime: 2.04741
+32,4,0.465859,0.510224,0.321748,0.227536
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 1.03196
+chunklListTime: 0.634697
+chunklListFunctorTime: 0.469904
+stdListTime: 0.908284
+perfGainChunkList: 1.43105
+perfGainChunklListFunctorTime: 1.93291
+64,4,0.908284,1.03196,0.634697,0.469904
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.0458081
+chunklListTime: 0.041921
+chunklListFunctorTime: 0.032726
+stdListTime: 0.047436
+perfGainChunkList: 1.13156
+perfGainChunklListFunctorTime: 1.44949
+4,16,0.047436,0.0458081,0.041921,0.032726
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.095985
+chunklListTime: 0.0726779
+chunklListFunctorTime: 0.0579859
+stdListTime: 0.079185
+perfGainChunkList: 1.08953
+perfGainChunklListFunctorTime: 1.36559
+8,16,0.079185,0.095985,0.0726779,0.0579859
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.276188
+chunklListTime: 0.134321
+chunklListFunctorTime: 0.0896269
+stdListTime: 0.247011
+perfGainChunkList: 1.83896
+perfGainChunklListFunctorTime: 2.75599
+16,16,0.247011,0.276188,0.134321,0.0896269
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.53146
+chunklListTime: 0.308796
+chunklListFunctorTime: 0.177114
+stdListTime: 0.481189
+perfGainChunkList: 1.55827
+perfGainChunklListFunctorTime: 2.71683
+32,16,0.481189,0.53146,0.308796,0.177114
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 1.02231
+chunklListTime: 0.517977
+chunklListFunctorTime: 0.315112
+stdListTime: 0.922971
+perfGainChunkList: 1.78188
+perfGainChunklListFunctorTime: 2.92903
+64,16,0.922971,1.02231,0.517977,0.315112
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.042376
+chunklListTime: 0.09444
+chunklListFunctorTime: 0.04795
+stdListTime: 0.065757
+perfGainChunkList: 0.696283
+perfGainChunklListFunctorTime: 1.37137
+4,1,0.065757,0.042376,0.09444,0.04795
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.091535
+chunklListTime: 0.174374
+chunklListFunctorTime: 0.119103
+stdListTime: 0.128169
+perfGainChunkList: 0.735024
+perfGainChunklListFunctorTime: 1.07612
+8,1,0.128169,0.091535,0.174374,0.119103
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.26589
+chunklListTime: 0.332576
+chunklListFunctorTime: 0.298715
+stdListTime: 0.231117
+perfGainChunkList: 0.694929
+perfGainChunklListFunctorTime: 0.773704
+16,1,0.231117,0.26589,0.332576,0.298715
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.525183
+chunklListTime: 0.620014
+chunklListFunctorTime: 0.596127
+stdListTime: 0.464471
+perfGainChunkList: 0.74913
+perfGainChunklListFunctorTime: 0.779148
+32,1,0.464471,0.525183,0.620014,0.596127
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 1.02269
+chunklListTime: 1.2152
+chunklListFunctorTime: 1.16538
+stdListTime: 0.898024
+perfGainChunkList: 0.73899
+perfGainChunklListFunctorTime: 0.770583
+64,1,0.898024,1.02269,1.2152,1.16538
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.0766309
+chunklListTime: 0.0418339
+chunklListFunctorTime: 0.0321021
+stdListTime: 0.068044
+perfGainChunkList: 1.62653
+perfGainChunklListFunctorTime: 2.11961
+4,4,0.068044,0.0766309,0.0418339,0.0321021
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.149685
+chunklListTime: 0.0746901
+chunklListFunctorTime: 0.094304
+stdListTime: 0.130486
+perfGainChunkList: 1.74703
+perfGainChunklListFunctorTime: 1.38367
+8,4,0.130486,0.149685,0.0746901,0.094304
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.29568
+chunklListTime: 0.186432
+chunklListFunctorTime: 0.112152
+stdListTime: 0.237541
+perfGainChunkList: 1.27414
+perfGainChunklListFunctorTime: 2.11803
+16,4,0.237541,0.29568,0.186432,0.112152
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.512983
+chunklListTime: 0.317959
+chunklListFunctorTime: 0.227692
+stdListTime: 0.477673
+perfGainChunkList: 1.50231
+perfGainChunklListFunctorTime: 2.09789
+32,4,0.477673,0.512983,0.317959,0.227692
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 1.0233
+chunklListTime: 0.629602
+chunklListFunctorTime: 0.468785
+stdListTime: 0.898368
+perfGainChunkList: 1.42688
+perfGainChunklListFunctorTime: 1.91638
+64,4,0.898368,1.0233,0.629602,0.468785
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.045825
+chunklListTime: 0.0417781
+chunklListFunctorTime: 0.03232
+stdListTime: 0.0477021
+perfGainChunkList: 1.1418
+perfGainChunklListFunctorTime: 1.47593
+4,16,0.0477021,0.045825,0.0417781,0.03232
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.092771
+chunklListTime: 0.0723161
+chunklListFunctorTime: 0.057303
+stdListTime: 0.0787679
+perfGainChunkList: 1.08922
+perfGainChunklListFunctorTime: 1.37459
+8,16,0.0787679,0.092771,0.0723161,0.057303
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.267887
+chunklListTime: 0.133888
+chunklListFunctorTime: 0.088902
+stdListTime: 0.246311
+perfGainChunkList: 1.83968
+perfGainChunklListFunctorTime: 2.77059
+16,16,0.246311,0.267887,0.133888,0.088902
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.529498
+chunklListTime: 0.347578
+chunklListFunctorTime: 0.194663
+stdListTime: 0.479969
+perfGainChunkList: 1.3809
+perfGainChunklListFunctorTime: 2.46564
+32,16,0.479969,0.529498,0.347578,0.194663
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 1.02695
+chunklListTime: 0.519536
+chunklListFunctorTime: 0.314157
+stdListTime: 0.918706
+perfGainChunkList: 1.76832
+perfGainChunklListFunctorTime: 2.92435
+64,16,0.918706,1.02695,0.519536,0.314157
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.704708
+chunklListTime: 1.22818
+chunklListFunctorTime: 1.36486
+stdListTime: 0.673798
+perfGainChunkList: 0.548615
+perfGainChunklListFunctorTime: 0.493675
+4,1,0.673798,0.704708,1.22818,1.36486
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.09302
+chunklListTime: 1.88573
+chunklListFunctorTime: 2.33062
+stdListTime: 1.07912
+perfGainChunkList: 0.572257
+perfGainChunklListFunctorTime: 0.46302
+8,1,1.07912,1.09302,1.88573,2.33062
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.82572
+chunklListTime: 3.45955
+chunklListFunctorTime: 4.45856
+stdListTime: 1.81544
+perfGainChunkList: 0.524762
+perfGainChunklListFunctorTime: 0.40718
+16,1,1.81544,1.82572,3.45955,4.45856
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.47571
+chunklListTime: 7.29595
+chunklListFunctorTime: 8.66017
+stdListTime: 3.46024
+perfGainChunkList: 0.474268
+perfGainChunklListFunctorTime: 0.399558
+32,1,3.46024,3.47571,7.29595,8.66017
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.79165
+chunklListTime: 12.5975
+chunklListFunctorTime: 16.0286
+stdListTime: 6.59161
+perfGainChunkList: 0.523245
+perfGainChunklListFunctorTime: 0.41124
+64,1,6.59161,6.79165,12.5975,16.0286
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.724007
+chunklListTime: 1.20979
+chunklListFunctorTime: 0.979859
+stdListTime: 0.736917
+perfGainChunkList: 0.609129
+perfGainChunklListFunctorTime: 0.752064
+4,4,0.736917,0.724007,1.20979,0.979859
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.13827
+chunklListTime: 1.96095
+chunklListFunctorTime: 1.63639
+stdListTime: 1.1177
+perfGainChunkList: 0.56998
+perfGainChunklListFunctorTime: 0.683031
+8,4,1.1177,1.13827,1.96095,1.63639
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.91597
+chunklListTime: 3.55296
+chunklListFunctorTime: 2.94662
+stdListTime: 1.86075
+perfGainChunkList: 0.52372
+perfGainChunklListFunctorTime: 0.631488
+16,4,1.86075,1.91597,3.55296,2.94662
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.44562
+chunklListTime: 6.49177
+chunklListFunctorTime: 5.57775
+stdListTime: 3.40186
+perfGainChunkList: 0.524026
+perfGainChunklListFunctorTime: 0.609898
+32,4,3.40186,3.44562,6.49177,5.57775
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.79277
+chunklListTime: 12.6708
+chunklListFunctorTime: 10.5215
+stdListTime: 6.60202
+perfGainChunkList: 0.52104
+perfGainChunklListFunctorTime: 0.627481
+64,4,6.60202,6.79277,12.6708,10.5215
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 0.730253
+chunklListTime: 1.22508
+chunklListFunctorTime: 1.02416
+stdListTime: 0.685524
+perfGainChunkList: 0.559574
+perfGainChunklListFunctorTime: 0.669352
+4,16,0.685524,0.730253,1.22508,1.02416
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.11084
+chunklListTime: 1.90735
+chunklListFunctorTime: 1.53957
+stdListTime: 1.09507
+perfGainChunkList: 0.574134
+perfGainChunklListFunctorTime: 0.711284
+8,16,1.09507,1.11084,1.90735,1.53957
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 1.83281
+chunklListTime: 3.44091
+chunklListFunctorTime: 2.50161
+stdListTime: 1.81131
+perfGainChunkList: 0.526404
+perfGainChunklListFunctorTime: 0.724058
+16,16,1.81131,1.83281,3.44091,2.50161
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 3.5231
+chunklListTime: 6.5311
+chunklListFunctorTime: 4.67009
+stdListTime: 3.38438
+perfGainChunkList: 0.518195
+perfGainChunklListFunctorTime: 0.724693
+32,16,3.38438,3.5231,6.5311,4.67009
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - no optimization
+normalListTime: 6.8243
+chunklListTime: 12.6516
+chunklListFunctorTime: 8.97886
+stdListTime: 6.44304
+perfGainChunkList: 0.509265
+perfGainChunklListFunctorTime: 0.717578
+64,16,6.44304,6.8243,12.6516,8.97886
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.0657889
+chunklListTime: 0.067065
+chunklListFunctorTime: 0.0478889
+stdListTime: 0.0614339
+perfGainChunkList: 0.916035
+perfGainChunklListFunctorTime: 1.28284
+4,1,0.0614339,0.0657889,0.067065,0.0478889
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.130608
+chunklListTime: 0.131715
+chunklListFunctorTime: 0.113586
+stdListTime: 0.137547
+perfGainChunkList: 1.04428
+perfGainChunklListFunctorTime: 1.21095
+8,1,0.137547,0.130608,0.131715,0.113586
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.243689
+chunklListTime: 0.287929
+chunklListFunctorTime: 0.296529
+stdListTime: 0.227909
+perfGainChunkList: 0.791546
+perfGainChunklListFunctorTime: 0.768589
+16,1,0.227909,0.243689,0.287929,0.296529
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.472812
+chunklListTime: 0.58603
+chunklListFunctorTime: 0.602357
+stdListTime: 0.477013
+perfGainChunkList: 0.813974
+perfGainChunklListFunctorTime: 0.791911
+32,1,0.477013,0.472812,0.58603,0.602357
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.919727
+chunklListTime: 1.17085
+chunklListFunctorTime: 1.16839
+stdListTime: 0.907963
+perfGainChunkList: 0.775476
+perfGainChunklListFunctorTime: 0.777107
+64,1,0.907963,0.919727,1.17085,1.16839
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.065462
+chunklListTime: 0.042649
+chunklListFunctorTime: 0.0323041
+stdListTime: 0.0705741
+perfGainChunkList: 1.65477
+perfGainChunklListFunctorTime: 2.18468
+4,4,0.0705741,0.065462,0.042649,0.0323041
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.134915
+chunklListTime: 0.080994
+chunklListFunctorTime: 0.095731
+stdListTime: 0.119393
+perfGainChunkList: 1.4741
+perfGainChunklListFunctorTime: 1.24717
+8,4,0.119393,0.134915,0.080994,0.095731
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.239734
+chunklListTime: 0.237341
+chunklListFunctorTime: 0.112632
+stdListTime: 0.263421
+perfGainChunkList: 1.10988
+perfGainChunklListFunctorTime: 2.33878
+16,4,0.263421,0.239734,0.237341,0.112632
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.4758
+chunklListTime: 0.378082
+chunklListFunctorTime: 0.228401
+stdListTime: 0.498617
+perfGainChunkList: 1.31881
+perfGainChunklListFunctorTime: 2.18308
+32,4,0.498617,0.4758,0.378082,0.228401
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.905985
+chunklListTime: 0.678189
+chunklListFunctorTime: 0.48793
+stdListTime: 0.938946
+perfGainChunkList: 1.38449
+perfGainChunklListFunctorTime: 1.92435
+64,4,0.938946,0.905985,0.678189,0.48793
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.0680439
+chunklListTime: 0.0418921
+chunklListFunctorTime: 0.0326641
+stdListTime: 0.0477569
+perfGainChunkList: 1.14
+perfGainChunklListFunctorTime: 1.46206
+4,16,0.0477569,0.0680439,0.0418921,0.0326641
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.13067
+chunklListTime: 0.0735849
+chunklListFunctorTime: 0.0581639
+stdListTime: 0.0793219
+perfGainChunkList: 1.07796
+perfGainChunklListFunctorTime: 1.36377
+8,16,0.0793219,0.13067,0.0735849,0.0581639
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.23577
+chunklListTime: 0.135102
+chunklListFunctorTime: 0.0897869
+stdListTime: 0.248029
+perfGainChunkList: 1.83586
+perfGainChunklListFunctorTime: 2.76242
+16,16,0.248029,0.23577,0.135102,0.0897869
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.474535
+chunklListTime: 0.307469
+chunklListFunctorTime: 0.171548
+stdListTime: 0.485716
+perfGainChunkList: 1.57972
+perfGainChunklListFunctorTime: 2.83137
+32,16,0.485716,0.474535,0.307469,0.171548
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 no vectorize
+normalListTime: 0.902214
+chunklListTime: 0.524467
+chunklListFunctorTime: 0.315445
+stdListTime: 0.942255
+perfGainChunkList: 1.7966
+perfGainChunklListFunctorTime: 2.98707
+64,16,0.942255,0.902214,0.524467,0.315445
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.0659471
+chunklListTime: 0.0679359
+chunklListFunctorTime: 0.048484
+stdListTime: 0.062266
+perfGainChunkList: 0.916541
+perfGainChunklListFunctorTime: 1.28426
+4,1,0.062266,0.0659471,0.0679359,0.048484
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.129715
+chunklListTime: 0.131013
+chunklListFunctorTime: 0.114293
+stdListTime: 0.137609
+perfGainChunkList: 1.05035
+perfGainChunklListFunctorTime: 1.204
+8,1,0.137609,0.129715,0.131013,0.114293
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.242979
+chunklListTime: 0.292705
+chunklListFunctorTime: 0.300504
+stdListTime: 0.2319
+perfGainChunkList: 0.792265
+perfGainChunklListFunctorTime: 0.771703
+16,1,0.2319,0.242979,0.292705,0.300504
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.474041
+chunklListTime: 0.571817
+chunklListFunctorTime: 0.593455
+stdListTime: 0.461351
+perfGainChunkList: 0.806816
+perfGainChunklListFunctorTime: 0.777398
+32,1,0.461351,0.474041,0.571817,0.593455
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.921991
+chunklListTime: 1.17144
+chunklListFunctorTime: 1.17297
+stdListTime: 0.915452
+perfGainChunkList: 0.781473
+perfGainChunklListFunctorTime: 0.780458
+64,1,0.915452,0.921991,1.17144,1.17297
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.067165
+chunklListTime: 0.04344
+chunklListFunctorTime: 0.033961
+stdListTime: 0.071172
+perfGainChunkList: 1.6384
+perfGainChunklListFunctorTime: 2.0957
+4,4,0.071172,0.067165,0.04344,0.033961
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.130466
+chunklListTime: 0.081674
+chunklListFunctorTime: 0.089332
+stdListTime: 0.118209
+perfGainChunkList: 1.44733
+perfGainChunklListFunctorTime: 1.32325
+8,4,0.118209,0.130466,0.081674,0.089332
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.236728
+chunklListTime: 0.238529
+chunklListFunctorTime: 0.111023
+stdListTime: 0.266899
+perfGainChunkList: 1.11894
+perfGainChunklListFunctorTime: 2.404
+16,4,0.266899,0.236728,0.238529,0.111023
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.471435
+chunklListTime: 0.371145
+chunklListFunctorTime: 0.231834
+stdListTime: 0.494561
+perfGainChunkList: 1.33253
+perfGainChunklListFunctorTime: 2.13325
+32,4,0.494561,0.471435,0.371145,0.231834
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.903643
+chunklListTime: 0.681356
+chunklListFunctorTime: 0.472692
+stdListTime: 0.925681
+perfGainChunkList: 1.35859
+perfGainChunklListFunctorTime: 1.95832
+64,4,0.925681,0.903643,0.681356,0.472692
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.06585
+chunklListTime: 0.0420851
+chunklListFunctorTime: 0.0328
+stdListTime: 0.0470999
+perfGainChunkList: 1.11916
+perfGainChunklListFunctorTime: 1.43597
+4,16,0.0470999,0.06585,0.0420851,0.0328
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.133224
+chunklListTime: 0.073619
+chunklListFunctorTime: 0.0570991
+stdListTime: 0.079812
+perfGainChunkList: 1.08412
+perfGainChunklListFunctorTime: 1.39778
+8,16,0.079812,0.133224,0.073619,0.0570991
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.240524
+chunklListTime: 0.137068
+chunklListFunctorTime: 0.091631
+stdListTime: 0.252744
+perfGainChunkList: 1.84393
+perfGainChunklListFunctorTime: 2.75828
+16,16,0.252744,0.240524,0.137068,0.091631
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.466227
+chunklListTime: 0.331274
+chunklListFunctorTime: 0.172939
+stdListTime: 0.481744
+perfGainChunkList: 1.45422
+perfGainChunklListFunctorTime: 2.78563
+32,16,0.481744,0.466227,0.331274,0.172939
+Hello World!
+
+compiled
+----------------------------------------------------------------------
+Running test New Allocator - O3 vectorize
+normalListTime: 0.899042
+chunklListTime: 0.524115
+chunklListFunctorTime: 0.311626
+stdListTime: 0.913938
+perfGainChunkList: 1.74377
+perfGainChunklListFunctorTime: 2.9328
+64,16,0.913938,0.899042,0.524115,0.311626
+Hello World!
+

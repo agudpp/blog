@@ -5,7 +5,8 @@
 
 
 
-// define a "nasty" allocator
+// AAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+// wth !
 template<typename T>
 struct HeapAllocator {
     static T* allocate(void) {return new T;}
@@ -14,7 +15,7 @@ struct HeapAllocator {
 
 template<typename T, unsigned int SIZE>
 struct StaticAllocator {
-    static T mem[SIZE];
+    alignas(T) static T mem[SIZE];
     static std::stack<T*> data;
 
     static void

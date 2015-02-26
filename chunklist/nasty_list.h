@@ -19,7 +19,7 @@ template<typename T, typename AllocT>
 class nasty_list {
 public:
 
-    // iterator
+    // iterator, should go outside :(
     //
     template<typename T2>
     class Iterator {

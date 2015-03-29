@@ -9,12 +9,12 @@
 
 // the number of elements per list
 #ifndef ELEMENTS_PER_LIST
-#define ELEMENTS_PER_LIST   64
+#define ELEMENTS_PER_LIST   120
 #endif
 
 // the size of the chunk
 #ifndef CHUNK_SIZE
-#define CHUNK_SIZE   32
+#define CHUNK_SIZE   8
 #endif
 
 

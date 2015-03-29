@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include <vector>
 #include <cassert>
 
 #include "nasty_list.h"
@@ -39,17 +40,19 @@ normalAllocator(void)
     ListT normalLists[LIST_COUNT];
     ChunkListT chunkLists[LIST_COUNT];
     std::list<int> stdlist[LIST_COUNT];
+    std::vector<int> vector[LIST_COUNT];
 
     for (int j = 0; j < LIST_COUNT; ++j) {
         for (int i = 0; i < ELEMENTS_PER_LIST; i++) {
             normalLists[j].addElement(i);
             chunkLists[j].addElement(i);
             stdlist[j].push_back(i);
+            vector[j].push_back(i);
         }
     }
 
     // test the time to get the elements
-    int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0;
+    int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0, d6 = 0;
     double t1 = 0., t2 = 0.;
 
     t1 = TimeHelper::currentTime();
@@ -120,28 +123,53 @@ normalAllocator(void)
     t2 = TimeHelper::currentTime();
     const double stdListTime = t2 - t1;
 
+    // vector
+    t1 = TimeHelper::currentTime();
+    for (unsigned int i = 0; i < ROUNDS; ++i) {
+        for (unsigned int j = 0; j < LIST_COUNT; ++j) {
+//            auto beg = vector[j].begin();
+//            auto end = vector[j].end();
+//            for (; beg != end; ++beg) {
+//                d6 += *beg;
+//            }
+            std::vector<int>& vec = vector[j];
+            for (unsigned int k = 0; k < vec.size(); ++k) {
+                d6 += vec[k];
+            }
+        }
+    }
+    t2 = TimeHelper::currentTime();
+    const double vectorTime = t2 - t1;
+
     //std::cout << "d1: " << d1 << ", d2: " << d2 << ", d3: " << d3 << std::endl;
 
     assert(d1 == d2);
     assert(d1 == d3);
     assert(d1 == d4);
+    assert(d1 == d6);
 
     std::cout << "normalListTime: " << normalListTime << std::endl
               << "chunklListTime: " << chunklListTime << std::endl
               << "chunklListFunctorTime: " << chunklListFunctorTime << std::endl
-              << "stdListTime: " << stdListTime << std::endl;
+              << "stdListTime: " << stdListTime << std::endl
+              << "vectorTime: " << vectorTime << std::endl;
 
     const double perfGainChunkList = stdListTime / chunklListTime;
     const double perfGainChunklListFunctorTime = stdListTime / chunklListFunctorTime;
+    const double perfLostChunkList = vectorTime / chunklListTime;
+    const double perfLostChunkListFunctorTime = vectorTime / chunklListFunctorTime;
 
     std::cout << "perfGainChunkList: " << perfGainChunkList << std::endl
-              << "perfGainChunklListFunctorTime: " << perfGainChunklListFunctorTime << std::endl;
+              << "perfGainChunklListFunctorTime: " << perfGainChunklListFunctorTime << std::endl
+              << "perfLostChunkList: " << perfLostChunkList << std::endl
+              << "perfLostChunkListFunctorTime: " << perfLostChunkListFunctorTime << std::endl;
 
 
     std::cout << ELEMENTS_PER_LIST << ","
               << CHUNK_SIZE << ","
               << stdListTime << ","
               << normalListTime << ","
+              << vectorTime << ","
               << chunklListTime << ","
               << chunklListFunctorTime << "\n";
 
@@ -185,7 +213,6 @@ main(void)
 //    }
 
 
-    std::cout << "Hello World!" << std::endl;
     return 0;
 }
 
